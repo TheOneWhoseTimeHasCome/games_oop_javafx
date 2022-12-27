@@ -20,7 +20,7 @@ public class Win {
         return result;
     }
 
-    public static boolean checkGorizontal(int[][] board) {
+    public static boolean checkHorizontal(int[][] board) {
         boolean result = false;
         int win5 = 0;
         for (int row = 0; row < board.length; row++) {
@@ -40,7 +40,7 @@ public class Win {
     }
 
     public static boolean check(int[][] board) {
-        return checkVertical(board) || checkGorizontal(board);
+        return checkVertical(board) || checkHorizontal(board);
     }
 }
 
